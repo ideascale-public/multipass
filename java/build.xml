@@ -1,0 +1,43 @@
+<project name="Multipass" default="run">
+
+    <path id="build.classpath">
+		<fileset dir="lib">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+
+    <path id="run.classpath">
+        <path refid="build.classpath"/>
+        <pathelement location="build/classes"/>
+	</path>
+
+    <target name="init" description="Initializes the build environment">
+        <mkdir dir="build"/>
+    </target>
+
+    <target name="build" depends="init"
+            description="Builds Java Classes">
+        <mkdir dir="build/classes"/>
+		<javac destdir="build/classes"
+				debug="on"
+				optimize="off"
+				fork="true"
+				memoryinitialsize="128M"
+				memorymaximumsize="256M"
+				source="1.6"
+				classpathref="build.classpath">
+			<src path="src" />
+			<include name="**/*.java" />
+		</javac>
+	</target>
+
+    <target name="run" depends="build"
+            description="Run the Example IdeaScale Multipass App">
+        <java classpathref="run.classpath" classname="com.ideascale.multipass.IdeaScaleMultipassTokenFactory"/>
+    </target>
+
+    <target name="clean" description="Remove generated files">
+        <delete dir="build"/>
+    </target>
+
+</project>
