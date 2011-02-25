@@ -28,7 +28,7 @@ if __FILE__ == $0
   
   # MultiPass example
   mp = MultiPass.new(APP_KEY,API_KEY)
-  mpenc = mp.encode(:email=>"john.doe@domain.com",:name=>"John Doe",:expires=>"2099-02-24T19:55:31.111-08:00")
+  mpenc = mp.encode(:email=>"ruby@domain.com",:name=>"Ruby Example",:expires=>"2099-02-24T19:55:31.111-08:00")
   token = CGI.escape(mpenc)
 
   mpdec = mp.decode(mpenc)
