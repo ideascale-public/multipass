@@ -51,8 +51,12 @@ class MainHandler(webapp.RequestHandler):
             aes = AES.new(saltedHash, mode)
             encrypted_bytes = aes.encrypt(data)
 
-            token = urllib.quote(base64.b64encode(encrypted_bytes))
-            token = token.replace("/","%2F")
+            b64token = base64.b64encode(encrypted_bytes)
+            b64token = re.sub(r'\s+' ,'' ,b64token)
+            b64token = re.sub(r'\=+$','' ,b64token)
+            b64token = re.sub(r'\+'  ,'-',b64token)
+            b64token = re.sub(r'\/'  ,'_',b64token)
+            token = urllib.quote(b64token)
 
             greeting = ("Welcome, %s! (\
                         <a href=\"%s\">sign out</a>,\

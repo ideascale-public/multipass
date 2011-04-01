@@ -3,9 +3,10 @@
   <component name="FacetManager">
     <facet type="google-appengine-python" name="Google App Engine (Python)">
       <configuration>
-        <option name="rootFolder" value="$MODULE_DIR$" />
+        <option name="rootFolder" value="$MODULE_DIR$/python" />
         <option name="sdkFolder" value="/usr/local/google_appengine" />
         <option name="templatesFolder" value="$MODULE_DIR$/python/templates" />
+        <option name="gp" value="" />
       </configuration>
     </facet>
   </component>
