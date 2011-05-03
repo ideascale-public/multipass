@@ -33,8 +33,26 @@
 
     <target name="run" depends="build"
             description="Run the Example IdeaScale Multipass App">
-        <java classpathref="run.classpath" classname="com.ideascale.multipass.IdeaScaleMultipassTokenFactory"/>
+        <java classpathref="run.classpath" classname="com.acme.sso.SsoExample"/>
     </target>
+
+    <target name="jar" depends="build"
+            description="Builds JAR file which can be used for Multipass SSO with IdeaScale">
+        <jar jarfile="dist/ideascale-multipass-sso.jar">
+			<fileset dir="build/classes" includes="com/ideascale/**/*.class"/>
+            <fileset dir="src" includes="com/ideascale/**/*.java"/>
+		</jar>
+    </target>
+
+    <target name="json" depends="build"
+            description="Builds JSON jar file, open source code which SSO depends on for compliation. Your Java project might already include JSON classes.">
+        <jar jarfile="dist/json-dep.jar">
+            <fileset dir="build/classes" includes="org/json/**/*.class"/>
+            <fileset dir="src" includes="org/json/**/*.java"/>
+        </jar>
+    </target>
+
+    <target name="dist" depends="jar,json" description="Builds Distribution JARs"/>
 
     <target name="clean" description="Remove generated files">
         <delete dir="build"/>
