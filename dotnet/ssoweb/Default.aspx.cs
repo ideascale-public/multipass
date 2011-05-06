@@ -10,7 +10,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Web.Script.Serialization;
 
-// Tweeking .net multipass code from an SSO Blog Post:
+// Tweeking .net code from an SSO Blog Post:
 // http://sypher-news.blogspot.com/2011/03/assistly-multipass-sso.html
 
 public partial class _Default : System.Web.UI.Page
@@ -24,9 +24,7 @@ public partial class _Default : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         UserData user_data = new UserData();
-        user_data.expires = DateTime.UtcNow.AddMinutes(2).ToString("ddd MMM dd HH:mm:ss UTC yyyy");
-        //working on proper date formatting for server
-        //user_data.expires = DateTime.UtcNow.AddMinutes(2).ToString("s");
+        user_data.expires = DateTime.UtcNow.AddMinutes(2).ToString("s");
         user_data.email = "testing@domain.com";
         user_data.name = "dotNet Example";
         string encrypted_data = encryptUserData(user_data);
@@ -43,11 +41,10 @@ public partial class _Default : System.Web.UI.Page
         // Example of web.config configuration/appSettings section:
         string site_key = "12849";
         string api_key = "0d2c15da-b36f-4a9c-8f44-45d2669c3013-05e1fb36-54aa-44fc-888e-93eb95811e2e";
-        string iv = "0000000000000000";
+        byte[] bIV = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
-        // Using byte arrays
+        // Using byte arrays now instead of strings
         byte[] encrypted = null;
-        byte[] bIV = Encoding.ASCII.GetBytes(iv);
         byte[] data = Encoding.ASCII.GetBytes(json_data);
 
         // Pad using block size of 16 bytes

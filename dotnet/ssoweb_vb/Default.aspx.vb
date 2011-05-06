@@ -22,7 +22,7 @@ Partial Class _Default
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Dim user_data As New UserData()
-        user_data.expires = Date.UtcNow.AddMinutes(2).ToString("ddd MMM dd HH:mm:ss UTC yyyy")
+        user_data.expires = Date.UtcNow.AddMinutes(2).ToString("s")
         user_data.email = "testing@domain.com"
         user_data.name = "vb.net Example"
         Dim encrypted_data As String = encryptUserData(user_data)
@@ -36,10 +36,9 @@ Partial Class _Default
 
         Dim site_key As String = "12849"
         Dim api_key As String = "0d2c15da-b36f-4a9c-8f44-45d2669c3013-05e1fb36-54aa-44fc-888e-93eb95811e2e"
-        Dim iv As String = "0000000000000000"
+        Dim bIV As Byte() = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
 
         Dim encrypted As Byte()
-        Dim bIV As Byte() = Encoding.ASCII.GetBytes(iv)
         Dim data As Byte() = Encoding.ASCII.GetBytes(json_data)
  
         Dim pad As Integer = 16 - (data.Length Mod 16)
