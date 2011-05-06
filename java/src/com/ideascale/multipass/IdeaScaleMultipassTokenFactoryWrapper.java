@@ -12,7 +12,7 @@ public class IdeaScaleMultipassTokenFactoryWrapper {
     public String token(String appKey, String apiKey, String email, String name) {
         long _1daymills = 1000L * 60L * 60L * 24L;
         Date expiration = new Date(System.currentTimeMillis()+_1daymills);
-        return token(apiKey,apiKey,email,name,expiration);
+        return token(appKey,apiKey,email,name,expiration);
     }
 
     public String token(String appKey, String apiKey, String email, String name, Date expiration) {
