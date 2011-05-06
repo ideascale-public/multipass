@@ -24,7 +24,7 @@
 				fork="true"
 				memoryinitialsize="128M"
 				memorymaximumsize="256M"
-				source="1.6"
+				source="1.4"
 				classpathref="build.classpath">
 			<src path="src" />
 			<include name="**/*.java" />
