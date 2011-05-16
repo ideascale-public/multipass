@@ -26,7 +26,7 @@ Partial Class _Default
         user_data.email = "testing@domain.com"
         user_data.name = "vb.net Example"
         Dim encrypted_data As String = encryptUserData(user_data)
-        Dim url As String = String.Format("http://multipass.ideascale.com/a/panel/do?multipass={0}", encrypted_data)
+        Dim url As String = String.Format("http://multipass.ideascale.com/a/panel.do?multipass={0}", encrypted_data)
         Response.Redirect(url)
     End Sub
 

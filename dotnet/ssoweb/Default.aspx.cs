@@ -28,7 +28,7 @@ public partial class _Default : System.Web.UI.Page
         user_data.email = "testing@domain.com";
         user_data.name = "dotNet Example";
         string encrypted_data = encryptUserData(user_data);
-        string url = string.Format("http://multipass.ideascale.com/a/panel/do?multipass={0}", encrypted_data);
+        string url = string.Format("http://multipass.ideascale.com/a/panel.do?multipass={0}", encrypted_data);
         Response.Redirect(url);
     }
 
