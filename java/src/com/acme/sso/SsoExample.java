@@ -1,6 +1,7 @@
 package com.acme.sso;
 
 import com.ideascale.multipass.IdeaScaleMultipassTokenFactory;
+import com.ideascale.multipass.IdeaScaleMultipassTokenFactoryWrapper;
 
 import java.util.Date;
 
@@ -26,6 +27,19 @@ public class SsoExample {
 
         // Example Login URL (below). Use a similar URL in your website.
         // Your URL: http://yourcommunity.ideascale.com/a/panel.do?multipass=#{token}
-        System.out.println("http://multipass.ideascale.com/a/panel.do?multipass="+token);
+        System.out.println(url(token));
+
+        // Super super simple example (for systems like ColdFusion which require no-arg constructor)
+        IdeaScaleMultipassTokenFactoryWrapper wrapper = new IdeaScaleMultipassTokenFactoryWrapper();
+        token = wrapper.token(app_key,api_key,"java@domain.com","Java Example",date);
+        System.out.println(url(token));
+
+        // And a call to the sanity-check method on the wrapper... this should be called to help
+        // diagnose problems if you can't get any token to be generated.
+        System.out.println(wrapper.example());
+    }
+
+    private static String url(String token) {
+        return "http://multipass.ideascale.com/a/panel.do?multipass="+token;
     }
 }
