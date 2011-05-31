@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Configuration;
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
@@ -46,12 +40,6 @@ public partial class _Default : System.Web.UI.Page
         // Using byte arrays now instead of strings
         byte[] encrypted = null;
         byte[] data = Encoding.ASCII.GetBytes(json_data);
-
-        // Pad using block size of 16 bytes
-        int pad = 16 - (data.Length % 16);
-        Array.Resize(ref data, data.Length + pad);
-        for (var i = 0; i < pad; i++)
-            data[data.Length - pad + i] = (byte)pad;
 
         // Use the AesManaged object to do the encryption
         using (AesManaged aesAlg = new AesManaged())

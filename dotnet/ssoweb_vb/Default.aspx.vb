@@ -1,10 +1,4 @@
 ﻿Imports System
-Imports System.Collections.Generic
-Imports System.Linq
-Imports System.Web
-Imports System.Web.UI
-Imports System.Web.UI.WebControls
-Imports System.Configuration
 Imports System.IO
 Imports System.Security.Cryptography
 Imports System.Text
@@ -41,12 +35,6 @@ Partial Class _Default
         Dim encrypted As Byte()
         Dim data As Byte() = Encoding.ASCII.GetBytes(json_data)
  
-        Dim pad As Integer = 16 - (data.Length Mod 16)
-        Array.Resize(data, data.Length + pad)
-        For i = 0 To pad - 1
-            data(data.Length - pad + i) = CType(pad, Byte)
-        Next
-
         Using aesAlg As AesManaged = New AesManaged()
 
             aesAlg.IV = bIV
