@@ -1,0 +1,263 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		507750A713FAAC1700FC85E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 507750A613FAAC1700FC85E9 /* Foundation.framework */; };
+		507750AA13FAAC1700FC85E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 507750A913FAAC1700FC85E9 /* main.m */; };
+		507750BB13FAAC7200FC85E9 /* NSData-AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 507750B813FAAC7200FC85E9 /* NSData-AES.m */; };
+		507750BC13FAAC7200FC85E9 /* NSData-Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 507750BA13FAAC7200FC85E9 /* NSData-Base64.m */; };
+		507750C013FAB37200FC85E9 /* SSOHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 507750BF13FAB37200FC85E9 /* SSOHelper.m */; };
+		507750C713FAB47200FC85E9 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 507750C413FAB47200FC85E9 /* JSONKit.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		507750A013FAAC1700FC85E9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		507750A213FAAC1700FC85E9 /* SSOExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SSOExample; sourceTree = BUILT_PRODUCTS_DIR; };
+		507750A613FAAC1700FC85E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		507750A913FAAC1700FC85E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		507750AC13FAAC1700FC85E9 /* SSOExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SSOExample-Prefix.pch"; sourceTree = "<group>"; };
+		507750AD13FAAC1700FC85E9 /* SSOExample.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = SSOExample.1; sourceTree = "<group>"; };
+		507750B713FAAC7200FC85E9 /* NSData-AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData-AES.h"; sourceTree = "<group>"; };
+		507750B813FAAC7200FC85E9 /* NSData-AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData-AES.m"; sourceTree = "<group>"; };
+		507750B913FAAC7200FC85E9 /* NSData-Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData-Base64.h"; sourceTree = "<group>"; };
+		507750BA13FAAC7200FC85E9 /* NSData-Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData-Base64.m"; sourceTree = "<group>"; };
+		507750BE13FAB37200FC85E9 /* SSOHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSOHelper.h; sourceTree = "<group>"; };
+		507750BF13FAB37200FC85E9 /* SSOHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSOHelper.m; sourceTree = "<group>"; };
+		507750C213FAB47200FC85E9 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		507750C313FAB47200FC85E9 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		507750C413FAB47200FC85E9 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		507750C513FAB47200FC85E9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		507750C613FAB47200FC85E9 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5077509F13FAAC1700FC85E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				507750A713FAAC1700FC85E9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5077509713FAAC1700FC85E9 = {
+			isa = PBXGroup;
+			children = (
+				507750A813FAAC1700FC85E9 /* SSOExample */,
+				507750A513FAAC1700FC85E9 /* Frameworks */,
+				507750A313FAAC1700FC85E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		507750A313FAAC1700FC85E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				507750A213FAAC1700FC85E9 /* SSOExample */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		507750A513FAAC1700FC85E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				507750A613FAAC1700FC85E9 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		507750A813FAAC1700FC85E9 /* SSOExample */ = {
+			isa = PBXGroup;
+			children = (
+				507750C113FAB47200FC85E9 /* JSONKit */,
+				507750B713FAAC7200FC85E9 /* NSData-AES.h */,
+				507750B813FAAC7200FC85E9 /* NSData-AES.m */,
+				507750B913FAAC7200FC85E9 /* NSData-Base64.h */,
+				507750BA13FAAC7200FC85E9 /* NSData-Base64.m */,
+				507750A913FAAC1700FC85E9 /* main.m */,
+				507750AD13FAAC1700FC85E9 /* SSOExample.1 */,
+				507750AB13FAAC1700FC85E9 /* Supporting Files */,
+				507750BE13FAB37200FC85E9 /* SSOHelper.h */,
+				507750BF13FAB37200FC85E9 /* SSOHelper.m */,
+			);
+			path = SSOExample;
+			sourceTree = "<group>";
+		};
+		507750AB13FAAC1700FC85E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				507750AC13FAAC1700FC85E9 /* SSOExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		507750C113FAB47200FC85E9 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				507750C213FAB47200FC85E9 /* CHANGELOG.md */,
+				507750C313FAB47200FC85E9 /* JSONKit.h */,
+				507750C413FAB47200FC85E9 /* JSONKit.m */,
+				507750C513FAB47200FC85E9 /* README.md */,
+				507750C613FAB47200FC85E9 /* readme.txt */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		507750A113FAAC1700FC85E9 /* SSOExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 507750B013FAAC1700FC85E9 /* Build configuration list for PBXNativeTarget "SSOExample" */;
+			buildPhases = (
+				5077509E13FAAC1700FC85E9 /* Sources */,
+				5077509F13FAAC1700FC85E9 /* Frameworks */,
+				507750A013FAAC1700FC85E9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSOExample;
+			productName = SSOExample;
+			productReference = 507750A213FAAC1700FC85E9 /* SSOExample */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5077509913FAAC1700FC85E9 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 5077509C13FAAC1700FC85E9 /* Build configuration list for PBXProject "SSOExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5077509713FAAC1700FC85E9;
+			productRefGroup = 507750A313FAAC1700FC85E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				507750A113FAAC1700FC85E9 /* SSOExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5077509E13FAAC1700FC85E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				507750AA13FAAC1700FC85E9 /* main.m in Sources */,
+				507750BB13FAAC7200FC85E9 /* NSData-AES.m in Sources */,
+				507750BC13FAAC7200FC85E9 /* NSData-Base64.m in Sources */,
+				507750C013FAB37200FC85E9 /* SSOHelper.m in Sources */,
+				507750C713FAB47200FC85E9 /* JSONKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		507750AE13FAAC1700FC85E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		507750AF13FAAC1700FC85E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		507750B113FAAC1700FC85E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SSOExample/SSOExample-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		507750B213FAAC1700FC85E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SSOExample/SSOExample-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5077509C13FAAC1700FC85E9 /* Build configuration list for PBXProject "SSOExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				507750AE13FAAC1700FC85E9 /* Debug */,
+				507750AF13FAAC1700FC85E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		507750B013FAAC1700FC85E9 /* Build configuration list for PBXNativeTarget "SSOExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				507750B113FAAC1700FC85E9 /* Debug */,
+				507750B213FAAC1700FC85E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5077509913FAAC1700FC85E9 /* Project object */;
+}
