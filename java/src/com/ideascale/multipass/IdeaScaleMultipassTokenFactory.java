@@ -24,13 +24,19 @@ public class IdeaScaleMultipassTokenFactory extends MultipassTokenFactoryBase {
     public IdeaScaleMultipassTokenFactory(String siteKey, String apiKey) {
         super(siteKey, apiKey);
     }
+    
+    public String token(String email, String name) {
+        return token(email,name,null);
+    }
 
     public String token(String email, String name, Date expiration) {
         JSONObject json = new JSONObject();
         try {
             json.put("email",email);
             json.put("name",name);
-            json.put("expires",ISODateTimeFormat.dateTime().print(new DateTime(expiration.getTime())));
+            if (expiration != null) {}
+                json.put("expires",ISODateTimeFormat.dateTime().print(new DateTime(expiration.getTime())));
+            }
             String unencrypted = json.toString();
             System.out.println("Unencrypted JSON: " + unencrypted);
             String token = encode(json);
