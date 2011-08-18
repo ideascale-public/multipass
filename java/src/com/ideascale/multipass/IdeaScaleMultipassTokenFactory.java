@@ -34,7 +34,7 @@ public class IdeaScaleMultipassTokenFactory extends MultipassTokenFactoryBase {
     }
     
     public String token(String email, String name, Date expiration) {
-        token(email,name,expiration,null);
+        return token(email,name,expiration,null);
     }
 
     public String token(String email, String name, Date expiration, Populator callback) {
@@ -42,7 +42,7 @@ public class IdeaScaleMultipassTokenFactory extends MultipassTokenFactoryBase {
         try {
             json.put("email",email);
             json.put("name",name);
-            if (expiration != null) {}
+            if (expiration != null) {
                 json.put("expires",ISODateTimeFormat.dateTime().print(new DateTime(expiration.getTime())));
             }
             if (callback != null) {
