@@ -4,6 +4,7 @@ import com.ideascale.multipass.IdeaScaleMultipassTokenFactory;
 import com.ideascale.multipass.IdeaScaleMultipassTokenFactoryWrapper;
 
 import java.util.Date;
+import java.util.HashMap;
 
 /**
  * User: jeremy
@@ -29,9 +30,21 @@ public class SsoExample {
         // Your URL: http://yourcommunity.ideascale.com/a/panel.do?multipass=#{token}
         System.out.println(url(token));
 
+        // Custom attributes (will be used as 'custom fields' for a Member in IdeaScale
+        HashMap attributes = new HashMap();
+        attributes.put("office","corporate");
+
+        // Example with custom attributes passed in
+        token = multipass.token("java@domain.com","Java Example",date,attributes);
+        System.out.println(url(token));
+
         // Super super simple example (for systems like ColdFusion which require no-arg constructor)
         IdeaScaleMultipassTokenFactoryWrapper wrapper = new IdeaScaleMultipassTokenFactoryWrapper();
         token = wrapper.token(app_key,api_key,"java@domain.com","Java Example",date);
+        System.out.println(url(token));
+        
+        // Simple example with custom attributes passed in
+        token = wrapper.token(app_key,api_key,"java@domain.com","Java Example",date,attributes);
         System.out.println(url(token));
 
         // And a call to the sanity-check method on the wrapper... this should be called to help

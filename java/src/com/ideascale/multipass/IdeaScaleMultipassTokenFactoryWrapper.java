@@ -1,6 +1,7 @@
 package com.ideascale.multipass;
 
 import java.util.Date;
+import java.util.Map;
 
 /**
  * User: jeremy
@@ -18,6 +19,11 @@ public class IdeaScaleMultipassTokenFactoryWrapper {
     public String token(String appKey, String apiKey, String email, String name, Date expiration) {
         IdeaScaleMultipassTokenFactory multipass = new IdeaScaleMultipassTokenFactory(appKey,apiKey);
         return multipass.token(email,name,expiration);
+    }
+
+    public String token(String appKey, String apiKey, String email, String name, Date expiration, Map attributes) {
+        IdeaScaleMultipassTokenFactory multipass = new IdeaScaleMultipassTokenFactory(appKey,apiKey);
+        return multipass.token(email,name,expiration,attributes);
     }
 
     public String example() {

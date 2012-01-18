@@ -6,6 +6,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 /**
  * IdeaScale Single Sign-On: Multipass-Compatible Token-Based Authentication
@@ -34,10 +37,14 @@ public class IdeaScaleMultipassTokenFactory extends MultipassTokenFactoryBase {
     }
     
     public String token(String email, String name, Date expiration) {
-        return token(email,name,expiration,null);
+        return token(email,name,expiration,null,null);
     }
 
-    public String token(String email, String name, Date expiration, Populator callback) {
+    public String token(String email, String name, Date expiration, Map attributes) {
+        return token(email,name,expiration,attributes,null);
+    }
+
+    public String token(String email, String name, Date expiration, Map attributes, Populator populator) {
         JSONObject json = new JSONObject();
         try {
             json.put("email",email);
@@ -45,8 +52,17 @@ public class IdeaScaleMultipassTokenFactory extends MultipassTokenFactoryBase {
             if (expiration != null) {
                 json.put("expires",ISODateTimeFormat.dateTime().print(new DateTime(expiration.getTime())));
             }
-            if (callback != null) {
-                callback.populate(json);
+            if (attributes != null) {
+                JSONObject attributesJSON = new JSONObject();
+                for (Iterator i = attributes.keySet().iterator(); i.hasNext();) {
+                    Object key = i.next();
+                    Object value = attributes.get(key);
+                    attributesJSON.put(key.toString(),value);
+                }
+                json.put("attributes",attributesJSON);
+            }
+            if (populator != null) {
+                populator.populate(json);
             }
             String unencrypted = json.toString();
             System.out.println("Unencrypted JSON: " + unencrypted);
