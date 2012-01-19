@@ -2,6 +2,7 @@ package com.acme.sso;
 
 import com.ideascale.multipass.IdeaScaleMultipassTokenFactory;
 import com.ideascale.multipass.IdeaScaleMultipassTokenFactoryWrapper;
+import com.ideascale.multipass.IdeaScaleTokenizer;
 
 import java.util.Date;
 import java.util.HashMap;
@@ -50,6 +51,15 @@ public class SsoExample {
         // And a call to the sanity-check method on the wrapper... this should be called to help
         // diagnose problems if you can't get any token to be generated.
         System.out.println(wrapper.example());
+
+        // Cold-Fusion-friendly method for attributes
+        token = IdeaScaleTokenizer.tokenizer(app_key,api_key)
+                .setEmail("java@domain.com")
+                .setName("Java Example")
+                .setExpiration(date)
+                .addAttrbiute("office","corporate")
+                .token();
+        System.out.println(url(token));
     }
 
     private static String url(String token) {

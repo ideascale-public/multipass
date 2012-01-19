@@ -15,14 +15,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72768fe5-970e-4ce6-8370-bcc14b40715b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/dist/ideascale-multipass-sso.jar" afterPath="$PROJECT_DIR$/java/dist/ideascale-multipass-sso.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/dist/json-dep.jar" afterPath="$PROJECT_DIR$/java/dist/json-dep.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java/src/com/ideascale/multipass/IdeaScaleTokenizer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/src/com/acme/sso/SsoExample.java" afterPath="$PROJECT_DIR$/java/src/com/acme/sso/SsoExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/src/com/ideascale/multipass/IdeaScaleMultipassTokenFactory.java" afterPath="$PROJECT_DIR$/java/src/com/ideascale/multipass/IdeaScaleMultipassTokenFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/src/com/ideascale/multipass/IdeaScaleMultipassTokenFactoryWrapper.java" afterPath="$PROJECT_DIR$/java/src/com/ideascale/multipass/IdeaScaleMultipassTokenFactoryWrapper.java" />
     </list>
     <ignored path="multipass.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,64 +74,90 @@
     <favorites_list name="multipass" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="IdeaScaleMultipassTokenFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/src/com/ideascale/multipass/IdeaScaleMultipassTokenFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="18" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SsoExample.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java/src/com/acme/sso/SsoExample.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="45" selection-start="1499" selection-end="1499" vertical-scroll-proportion="0.5167173">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IdeaScaleMultipassTokenFactoryWrapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/src/com/ideascale/multipass/IdeaScaleMultipassTokenFactoryWrapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="26" selection-start="975" selection-end="975" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/build.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="28" selection-start="672" selection-end="672" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MultipassTokenFactoryBase.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/src/com/ideascale/multipass/MultipassTokenFactoryBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="9" selection-start="3631" selection-end="3631" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="IdeaScaleMultipassTokenFactory.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/java/src/com/ideascale/multipass/IdeaScaleMultipassTokenFactory.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="24" column="13" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SsoExample.java" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/java/src/com/acme/sso/SsoExample.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="61" column="39" selection-start="2836" selection-end="2836" vertical-scroll-proportion="0.964539">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="IdeaScaleMultipassTokenFactoryWrapper.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/java/src/com/ideascale/multipass/IdeaScaleMultipassTokenFactoryWrapper.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="25" column="65" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="IdeaScaleTokenizer.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/java/src/com/ideascale/multipass/IdeaScaleTokenizer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="55" column="64" selection-start="1583" selection-end="1583" vertical-scroll-proportion="0.0">
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/java/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/java/build.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="26" column="28" selection-start="672" selection-end="672" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MultipassTokenFactoryBase.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/java/src/com/ideascale/multipass/MultipassTokenFactoryBase.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="97" column="9" selection-start="3631" selection-end="3631" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="IdeaScaleMultipassTokenFactoryWrapper.java" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/java/src/com/ideascale/multipass/IdeaScaleMultipassTokenFactoryWrapper.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="19" column="30" selection-start="597" selection-end="597" vertical-scroll-proportion="0.30327058">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -159,8 +180,9 @@
         <option value="$PROJECT_DIR$/java/src/com/ideascale/multipass/IdeaScaleSsoTokenFactory.java" />
         <option value="$PROJECT_DIR$/java/build.xml" />
         <option value="$PROJECT_DIR$/java/src/com/ideascale/multipass/IdeaScaleMultipassTokenFactoryWrapper.java" />
-        <option value="$PROJECT_DIR$/java/src/com/acme/sso/SsoExample.java" />
         <option value="$PROJECT_DIR$/java/src/com/ideascale/multipass/IdeaScaleMultipassTokenFactory.java" />
+        <option value="$PROJECT_DIR$/java/src/com/ideascale/multipass/IdeaScaleTokenizer.java" />
+        <option value="$PROJECT_DIR$/java/src/com/acme/sso/SsoExample.java" />
       </list>
     </option>
   </component>
@@ -205,8 +227,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -313,8 +333,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="multipass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="multipass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Favorites" />
     </panes>
   </component>
@@ -332,9 +372,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -535,21 +575,20 @@
     <frame x="391" y="22" width="2165" height="1425" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22105263" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2482303" sideWeight="0.3413534" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2482303" sideWeight="0.3413534" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32958537" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2482303" sideWeight="0.43233082" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964605" sideWeight="0.77894735" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.24799244" sideWeight="0.77894735" order="0" side_tool="false" content_ui="tabs" x="3" y="22" width="386" height="945" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32932332" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -558,6 +597,7 @@
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964605" sideWeight="0.77894735" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -682,25 +722,32 @@
         <state line="97" column="9" selection-start="3631" selection-end="3631" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/com/ideascale/multipass/IdeaScaleMultipassTokenFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="13" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/java/src/com/ideascale/multipass/IdeaScaleMultipassTokenFactoryWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="26" selection-start="975" selection-end="975" vertical-scroll-proportion="0.0">
+        <state line="25" column="65" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/com/ideascale/multipass/IdeaScaleTokenizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="64" selection-start="1583" selection-end="1583" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/com/ideascale/multipass/IdeaScaleMultipassTokenFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="18" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/src/com/acme/sso/SsoExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="45" selection-start="1499" selection-end="1499" vertical-scroll-proportion="0.5167173">
+        <state line="61" column="39" selection-start="2836" selection-end="2836" vertical-scroll-proportion="0.964539">
           <folding />
         </state>
       </provider>
