@@ -18,8 +18,12 @@ public class IdeaScaleTokenizer {
     private HashMap attributes = new HashMap();
 
     public static IdeaScaleTokenizer tokenizer(String appKey, String apiKey) {
-        IdeaScaleTokenizer tokenizer = new IdeaScaleTokenizer(new IdeaScaleMultipassTokenFactory(appKey,apiKey));
+        IdeaScaleTokenizer tokenizer = new IdeaScaleTokenizer(appKey,apiKey);
         return tokenizer;
+    }
+
+    public IdeaScaleTokenizer(String appKey, String apiKey) {
+        this(new IdeaScaleMultipassTokenFactory(appKey,apiKey));
     }
 
     public IdeaScaleTokenizer(IdeaScaleMultipassTokenFactory ideaScaleMultipassTokenFactory) {
