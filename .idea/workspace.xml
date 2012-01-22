@@ -14,7 +14,10 @@
     <option name="historyRevisionsNumber" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72768fe5-970e-4ce6-8370-bcc14b40715b" name="Default" comment="" />
+    <list default="true" id="72768fe5-970e-4ce6-8370-bcc14b40715b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/dist/ideascale-multipass-sso.jar" afterPath="$PROJECT_DIR$/java/dist/ideascale-multipass-sso.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="multipass.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -82,10 +85,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="SsoExample.java" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="SsoExample.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/java/src/com/acme/sso/SsoExample.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="19" column="55" selection-start="636" selection-end="636" vertical-scroll-proportion="0.28199053">
+                <state line="55" column="41" selection-start="2575" selection-end="2575" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -100,10 +103,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="IdeaScaleTokenizer.java" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="IdeaScaleTokenizer.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/java/src/com/ideascale/multipass/IdeaScaleTokenizer.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="25" column="64" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0">
+                <state line="36" column="32" selection-start="990" selection-end="990" vertical-scroll-proportion="0.6028369">
                   <folding />
                 </state>
               </provider>
@@ -140,10 +143,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="IdeaScaleMultipassTokenFactoryWrapper.java" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="IdeaScaleMultipassTokenFactoryWrapper.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/java/src/com/ideascale/multipass/IdeaScaleMultipassTokenFactoryWrapper.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="26" column="5" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.4907621">
+                <state line="10" column="52" selection-start="190" selection-end="190" vertical-scroll-proportion="0.15163529">
                   <folding />
                 </state>
               </provider>
@@ -366,9 +369,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -567,17 +570,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="391" y="22" width="2165" height="1425" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22105263" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22105263" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.24799244" sideWeight="0.77894735" order="1" side_tool="true" content_ui="tabs" x="3" y="970" width="387" height="475" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32857144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32958537" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -600,8 +603,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="myTodoPanelSettings">
       <value>
         <are-packages-shown value="false" />
@@ -629,7 +632,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new constructor for cold fusion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added helper method for CF" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -650,6 +653,7 @@
     <MESSAGE value="Beefed up examples, added Wrapper class.&#10;Compiling with 1.4 source" />
     <MESSAGE value="Added new class to help cold fusion users." />
     <MESSAGE value="Added new constructor for cold fusion" />
+    <MESSAGE value="Added helper method for CF" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -703,11 +707,6 @@
         <state line="0" column="13" selection-start="13" selection-end="32" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/com/ideascale/multipass/IdeaScaleMultipassTokenFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="13" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0" />
@@ -723,23 +722,28 @@
         <state line="97" column="9" selection-start="3631" selection-end="3631" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/com/ideascale/multipass/IdeaScaleTokenizer.java">
+    <entry file="file://$PROJECT_DIR$/java/src/com/ideascale/multipass/IdeaScaleMultipassTokenFactoryWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="64" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0">
+        <state line="25" column="65" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/src/com/acme/sso/SsoExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="55" selection-start="636" selection-end="636" vertical-scroll-proportion="0.28199053">
+        <state line="55" column="41" selection-start="2575" selection-end="2575" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/com/ideascale/multipass/IdeaScaleMultipassTokenFactoryWrapper.java">
+    <entry file="file://$PROJECT_DIR$/java/src/com/ideascale/multipass/IdeaScaleMultipassTokenFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="5" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.4907621">
+        <state line="24" column="13" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/com/ideascale/multipass/IdeaScaleTokenizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="32" selection-start="990" selection-end="990" vertical-scroll-proportion="0.6028369">
           <folding />
         </state>
       </provider>
