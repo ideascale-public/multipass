@@ -29,6 +29,13 @@ public class IdeaScaleTokenizer {
     public IdeaScaleTokenizer(IdeaScaleMultipassTokenFactory ideaScaleMultipassTokenFactory) {
         this.delegate = ideaScaleMultipassTokenFactory;
     }
+
+    public void reset() {
+        this.email = null;
+        this.name = null;
+        this.expiration = null;
+        this.attributes.clear();
+    }
     
     public IdeaScaleTokenizer setEmail(String email) {
         this.email = email;
