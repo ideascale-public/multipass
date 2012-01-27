@@ -58,10 +58,10 @@ public class IdeaScaleTokenizer {
     }
     
     public String token() {
-        if (email == null || email.isEmpty()) {
+        if (email == null || email.length() == 0) {
             throw new RuntimeException("Email has not been set");
         }
-        if (name == null || name.isEmpty()) {
+        if (name == null || name.length() == 0) {
             throw new RuntimeException("Name has not been set");
         }
         return delegate.token(email,name,expiration,attributes);
