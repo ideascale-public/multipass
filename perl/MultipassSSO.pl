@@ -20,7 +20,7 @@ sub Run {
     # userdata
     my %UserData;
     $UserData{email} = 'testing@domain.com';
-    $UserData{name}  = 'PHP5 Example';
+    $UserData{name}  = 'Perl Programming Language Example';
     $UserData{expires} = $ExpireDateTime;
 
     # create json object and encode userdata
