@@ -1,0 +1,27 @@
+{
+  "name": "multipass",
+  "version": "1.0.0",
+  "description": "IdeaScale multipass example in javascript",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "IdeaScale",
+    "SSO",
+    "multipass"
+  ],
+  "author": "Nigel Daniels",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "bootstrap": "^4.3.1",
+    "cross-fetch": "^3.0.4",
+    "crypto-js": "^3.1.9-1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "moment": "^2.24.0",
+    "popper.js": "^1.15.0",
+    "requirejs": "^2.3.6"
+  }
+}
